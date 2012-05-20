@@ -18,7 +18,7 @@ app.get('/', function(req, res){
 });
 
 app.post('/', function(req, res){
-  console.log(req.files.my_file);
+  console.log(req.files.my_file.path);
   res.send(req.files.my_file.path);
 });
 
